@@ -10,9 +10,5 @@ terraform {
       source  = "hashicorp/aws"
     }
   }
-  backend "s3" {
-    bucket = "devsecopsb36tfstate"
-    key    = "ansible.tfstate"
-    region = "us-east-1"
-  }
+
 }
