@@ -19,7 +19,7 @@ resource "aws_vpc_peering_connection" "foo" {
   }
 
   tags = {
-    Name = "Ansible-${var.vpc_name}-Peering"
+    Name = "Ansible-${var.vpc}-Peering"
   }
 }
 

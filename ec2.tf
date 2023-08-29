@@ -6,7 +6,7 @@ resource "aws_instance" "ec2" {
   subnet_id              = element(aws_route_table.public_subnet.*.id, count.index)
   vpc_security_group_ids = ["${aws_security_group.allow_all.id}"]
   tags = {
-    name              = "${var.vpc_name}-PublicServer-${count.index + 1}"
+    name              = "${var.vpc}-PublicServer-${count.index + 1}"
     Terraform-Managed = "Yes"
     environment       = local.environment
   }
