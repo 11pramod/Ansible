@@ -1,5 +1,5 @@
 data "aws_vpc" "ansible" {
-  vpc_id = "vpc-091629f2bcba44e35"
+  id = "vpc-091629f2bcba44e35"
 }
 
 data "aws_route_table" "ansible_vpc_rt" {
