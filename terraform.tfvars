@@ -1,5 +1,5 @@
 vpc                 = "project-vpc"
-vpc_cidr            = ["10.36.0.0/16"]
+vpc_cidr            = "10.36.0.0/16"
 subnet_public_cidr  = ["10.36.1.0.0/24", "10.36.2.0.0/24", "10.36.3.0.0/24"]
 subnet_private_cidr = ["10.36.10.0.0/24", "10.36.20.0.0/24", "10.36.30.0.0/24"]
 environment         = "production"
